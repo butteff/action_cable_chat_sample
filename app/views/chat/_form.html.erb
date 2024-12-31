@@ -1,0 +1,15 @@
+<form class="row row-cols-lg-auto g-4 align-items-center delimeter" method="POST" action="<%=chatpost_path%>">
+	  
+	  <div class="col-12">
+	    <label class="visually-hidden" for="chat_input">Message</label>
+	    <div class="input-group input-chat">
+	      <div class="input-group-text">@<%=current_user.email.split('@').first%>:</div>
+	      <input type="text" name="message" class="form-control" id="chat_input" placeholder="Input Message">
+	    </div>
+	  </div>
+
+	  <div class="col-12">
+	    <button type="submit" class="btn btn-primary">Submit</button>
+	  </div>
+	  
+</form>
